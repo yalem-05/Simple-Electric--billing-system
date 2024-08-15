@@ -1,0 +1,23 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.upper{
+    -fx-background-color: greenyellow;
+}
+
+.right{
+    -fx-background-color: #8d6921;
+}
+.left{
+    -fx-background-color: #634e0a;
+}
+
+.print, .pay, .calculate{
+    -fx-background-color:grey;
+    -fx-cursor: hand;
+}
+.print:hover, .pay:hover, .calculate:hover{
+    -fx-background-color:#75481e;
+     -fx-cursor: hand;
+}

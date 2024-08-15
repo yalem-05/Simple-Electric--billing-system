@@ -1,0 +1,46 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.firstname{
+    -fx-background-color: grey;
+}
+
+  .left_form{
+    -fx-background-color: #95d2e4;
+    -fx-border-color: white;
+}
+.right_form{
+    -fx-background-color:whitesmoke;
+    color: grey;
+    -fx-border-color: white;
+}
+
+.firstname , .lastname, .phone, .date, .email, .password, .cpassword{
+   -fx-background-color:#f2f5f5;
+   -fx-background-radius: 5px;
+   -fx-border-color: black;
+   -fx-border-width:2px;
+   -fx-font-size:11px;
+   -fx-font-family:"Arial";
+}
+
+.firstname:hover , .lastname:hover, .phone:hover, .date:hover, .email:hover, .password:hover, .cpassword:hover{
+    -fx-background-color:#374580; 
+    -fx-background-radius: 9px;
+}
+
+
+.loginbtn{
+  -fx-background-color:blue;
+   -fx-background-radius: 5px; 
+   -fx-cursor: hand;
+}
+.loginbtn:hover{
+    -fx-background-color: grey;
+}
+
+.firstname:focused , .lastname:focused, .phone:focused, .date:focused, .email:focused, .password:focused, .cpassword:focused{
+    -fx-background-color: #fff;
+    -fx-font: "Arial";
+}

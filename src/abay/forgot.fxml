@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pann" prefHeight="400.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abay.ForgotController">
+   <children>
+      <AnchorPane prefHeight="319.0" prefWidth="200.0" />
+      <ImageView fx:id="imm" fitHeight="150.0" fitWidth="161.0" layoutX="35.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images%20(1).jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="answer1" layoutX="234.0" layoutY="222.0" prefHeight="30.0" prefWidth="200.0" promptText="your answer" styleClass="textfield" stylesheets="@abay.css" />
+      <FontAwesomeIcon glyphName="LOCK" layoutX="307.0" layoutY="65.0" size="5em" />
+      <ComboBox fx:id="position1" layoutX="234.0" layoutY="74.0" onAction="#addpositionlist" prefHeight="30.0" prefWidth="200.0" promptText="Your position" styleClass="password" stylesheets="@abay.css" />
+      <ComboBox fx:id="question1" layoutX="234.0" layoutY="168.0" onAction="#addquestionlist" prefHeight="30.0" prefWidth="200.0" promptText="select your quastion" styleClass="password" stylesheets="@abay.css" />
+      <TextField fx:id="username1" layoutX="234.0" layoutY="116.0" prefHeight="30.0" prefWidth="200.0" promptText="user name" styleClass="textfield" stylesheets="@abay.css" />
+      <Button fx:id="proceed" layoutX="286.0" layoutY="335.0" mnemonicParsing="false" onAction="#proc" prefHeight="30.0" prefWidth="100.0" styleClass="loginbtn" stylesheets="@abay.css" text="procced" textFill="#1b1a1a">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="96.0" layoutY="335.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="100.0" styleClass="loginbtn" stylesheets="@abay.css" text="&lt;-Back" textFill="#1b1a1a">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imm1" fitHeight="150.0" fitWidth="161.0" layoutX="35.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="proceed1" layoutX="286.0" layoutY="335.0" mnemonicParsing="false" onAction="#proc" prefHeight="30.0" prefWidth="100.0" styleClass="loginbtn" stylesheets="@abay.css" text="procced" textFill="#1b1a1a">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="back1" layoutX="96.0" layoutY="335.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="100.0" styleClass="loginbtn" stylesheets="@abay.css" text="&lt;-Back" textFill="#1b1a1a">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pass" layoutX="229.0" layoutY="267.0" prefHeight="30.0" prefWidth="200.0" promptText="Enter your password" />
+   </children>
+</AnchorPane>

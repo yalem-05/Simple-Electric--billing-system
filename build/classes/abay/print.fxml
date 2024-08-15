@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abay.PrintController">
+   <children>
+      <BorderPane layoutX="127.0" layoutY="335.0" prefHeight="65.0" prefWidth="382.0" style="-fx-background-color: #835a5a;">
+         <left>
+            <Button fx:id="back" mnemonicParsing="false" onAction="#backkk" text="Back" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </left>
+         <right>
+            <Button mnemonicParsing="false" onAction="#print" text="Print" textFill="#252121" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </right>
+      </BorderPane>
+      <AnchorPane fx:id="pane" layoutX="124.0" layoutY="14.0" prefHeight="324.0" prefWidth="381.0" style="-fx-background-color: #e4dcdc;">
+         <children>
+            <TextArea fx:id="textarea" editable="false" layoutX="1.0" layoutY="21.0" prefHeight="303.0" prefWidth="381.0" />
+            <ImageView fx:id="printimg" fitHeight="88.0" fitWidth="155.0" layoutX="138.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pattent.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="131.0" layoutY="1.0" text="WELLCOME">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

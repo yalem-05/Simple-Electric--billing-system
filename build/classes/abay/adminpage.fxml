@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainform" prefHeight="200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abay.AdminpageController">
+    <stylesheets>
+        <URL value="@adminpage.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="left" layoutY="5.0" prefHeight="585.0" prefWidth="197.0" styleClass="left" stylesheets="@adminpage.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="750.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="home" layoutX="53.0" layoutY="281.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="112.0" styleClass="home" stylesheets="@adminpage.css" text="Home" textFill="#184a3f">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <FontAwesomeIcon fill="#e40f0f" glyphName="HOME" layoutX="53.0" layoutY="308.0" size="3em" />
+            <FontAwesomeIcon fill="#dda5a5" glyphName="USER" layoutX="52.0" layoutY="86.0" size="7em" wrappingWidth="86.28571510314941" />
+            <Label layoutX="42.0" layoutY="110.0" text="Wellcome" textFill="#ebe1e1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="user" layoutX="62.0" layoutY="149.0" text="USER" textFill="#d3c7c7">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="right" layoutX="-195.0" layoutY="-14.0" prefHeight="520.0" prefWidth="827.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="-195.0" AnchorPane.rightAnchor="353.0" AnchorPane.topAnchor="-14.0" />
+            <Line endX="122.0" layoutX="74.0" layoutY="176.0" startX="-74.0" />
+            <Button fx:id="logout" layoutX="58.0" layoutY="507.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: lightgreen; -fx-cursor: hand;" styleClass="delete" stylesheets="@adminpage.css" text="LOG OUT" />
+            <Button fx:id="see" layoutX="65.0" layoutY="330.0" mnemonicParsing="false" onAction="#paaa" style="-fx-cursor: hand;" styleClass="update" stylesheets="@adminpage.css" text="Pay_info">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="table" layoutX="201.0" prefHeight="585.0" prefWidth="646.0">
+         <children>
+            <AnchorPane fx:id="tablecover" prefHeight="380.0" prefWidth="737.0" styleClass="tablecover" stylesheets="@adminpage.css">
+               <children>
+                  <TableView fx:id="customertable" layoutX="22.0" layoutY="66.0" onMouseClicked="#addCustomerSelect" prefHeight="300.0" prefWidth="610.0">
+                    <columns>
+                      <TableColumn fx:id="columnid" prefWidth="75.0" text="customerid" />
+                      <TableColumn fx:id="columnfirstname" prefWidth="134.0" text="firstname" />
+                        <TableColumn fx:id="columnlastname" minWidth="0.0" prefWidth="78.0" text="lastname" />
+                        <TableColumn fx:id="columnemail" prefWidth="74.0" text="email" />
+                        <TableColumn fx:id="columnphone" prefWidth="74.0" text="phone" />
+                        <TableColumn fx:id="columncity" prefWidth="82.0" text="kebele" />
+                        <TableColumn fx:id="columnimage" prefWidth="89.0" text="image" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="search" editable="false" layoutX="14.0" layoutY="21.0" prefHeight="36.0" prefWidth="260.0" styleClass="search" stylesheets="@adminpage.css" text="ELECTRIC BILLING SYSTEM" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="22.0" layoutY="432.0" text="FirstName">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="465.0" text="LastName">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstname" layoutX="101.0" layoutY="428.0" prefHeight="25.0" prefWidth="159.0" styleClass="firstname" stylesheets="@signup.css" />
+            <TextField fx:id="lastname" layoutX="101.0" layoutY="461.0" prefHeight="25.0" prefWidth="159.0" styleClass="lastname" stylesheets="@signup.css" />
+            <Label layoutX="281.0" layoutY="414.0" text="Email">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="281.0" layoutY="447.0" text="phone">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="323.0" layoutY="414.0" prefHeight="25.0" prefWidth="159.0" styleClass="email" stylesheets="@signup.css" />
+            <TextField fx:id="phone" layoutX="323.0" layoutY="447.0" prefHeight="25.0" prefWidth="159.0" styleClass="lastname" stylesheets="@signup.css" />
+            <Label layoutX="33.0" layoutY="497.0" text="kebele">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="kebele" layoutX="101.0" layoutY="493.0" prefHeight="25.0" prefWidth="159.0" styleClass="firstname" stylesheets="@signup.css" />
+            <Button fx:id="add" layoutX="436.0" layoutY="534.0" mnemonicParsing="false" onAction="#addCustomerAdd" style="-fx-cursor: hand;" styleClass="add" stylesheets="@adminpage.css" text="Add">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="update" layoutX="282.0" layoutY="534.0" mnemonicParsing="false" onAction="#addCustomerUpdate" style="-fx-cursor: hand;" styleClass="update" stylesheets="@adminpage.css" text="Update">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete" layoutX="362.0" layoutY="534.0" mnemonicParsing="false" onAction="#addCustomerDelete" style="-fx-cursor: hand;" styleClass="delete" stylesheets="@adminpage.css" text="Delete">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="clear" layoutX="213.0" layoutY="534.0" mnemonicParsing="false" onAction="#customorReset" style="-fx-cursor: hand;" styleClass="delete" stylesheets="@adminpage.css" text="Clear">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="imgcont" layoutX="510.0" layoutY="391.0" prefHeight="122.0" prefWidth="146.0" styleClass="imgcont" stylesheets="@adminpage.css">
+               <children>
+                  <ImageView fx:id="myimage" fitHeight="102.0" fitWidth="134.0" layoutY="6.0" onMouseClicked="#addCustomerInsertImage" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="importimg" layoutX="8.0" layoutY="84.0" mnemonicParsing="false" onMouseClicked="#addCustomerInsertImage" prefHeight="43.0" prefWidth="128.0" styleClass="loginbtn" stylesheets="@abay.css" text="import" textFill="#f2eeee">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="57.0" layoutY="392.0" text="ID">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="customerid" layoutX="101.0" layoutY="388.0" prefHeight="26.0" prefWidth="112.0" styleClass="firstname" stylesheets="@signup.css" />
+            <Label layoutX="280.0" layoutY="484.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="password" layoutX="347.0" layoutY="484.0" prefHeight="26.0" prefWidth="134.0" styleClass="password" stylesheets="@signup.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

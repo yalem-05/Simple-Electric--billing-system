@@ -1,0 +1,104 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 23, 2023, 8:40:40 PM
+    Author     : Yalem
+*/
+
+
+
+
+  .left_form{
+    -fx-background-color: #5ddeb8;
+    -fx-border-color: white;
+}
+.right_form{
+    -fx-background-color:whitesmoke;
+    color: grey;
+    -fx-border-color: white;
+}
+.textfield ,.showpassword{
+   -fx-background-color:#f2f5f5;
+   -fx-background-radius: 5px;
+   -fx-border-color: black;
+   -fx-border-width:2px;
+   -fx-font-size:11px;
+   -fx-font-family:"Arial";
+}
+.password{
+   -fx-background-color:#f2f5f5;
+   -fx-background-radius: 5px;
+    -fx-border-color: black;
+   -fx-border-width:2px;
+    -fx-font-size:11px;
+  -fx-font-family:"Arial";
+}
+
+
+
+.textfield:hover, .showpassword:hover{
+   -fx-background-color:#374580; 
+    -fx-background-radius: 9px;
+}
+
+.password:hover{
+   -fx-background-color:#374580; 
+    -fx-background-radius: 9px;
+}
+
+.textfield:focused, .showpassword:focused{
+    -fx-background-color: white;   
+}
+.password:focused{
+    -fx-background-color: white;
+    -fx-font-family:"Arial";
+}
+
+.loginbtn{
+  -fx-background-color:blue;
+   -fx-background-radius: 5px; 
+   -fx-cursor: hand;
+}
+.loginbtn:hover{
+    -fx-background-color: grey;
+}
+.custom:hover{
+    -fx-background-color: grey;
+}
+.custom:focused{
+    -fx-background-color: #fff;
+    -fx-font-family:"Arial";
+}
+.custom{
+    -fx-border-color:black ;
+    -fx-color:white;
+     -fx-cursor:hand;
+   
+}
+
+
+.admin:hover{
+    -fx-background-color: grey;
+}
+.admin:focused{
+    -fx-background-color: #fff;
+    -fx-font-family:"Arial";
+}
+.admin{
+    -fx-border-color:black ;
+    -fx-color:white;
+    -fx-cursor:hand;
+}
+.forgot{
+    -fx-background-color: grey;
+    -fx-color:white;
+    -fx-cursor: hand;
+}
+
+.forgot:hover{
+     -fx-background-color: #70615d;
+     -fx-cursor: hand;
+}
